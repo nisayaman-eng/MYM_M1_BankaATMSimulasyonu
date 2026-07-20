@@ -23,4 +23,7 @@ fun main() {
     val temizlenmisAd = ad.replaceFirstChar { it.uppercase() }
 
     println(temizlenmisAd)
+
+    //val bosluk = "   "
+    //println(bosluk.isEmpty())
 }
