@@ -13,19 +13,31 @@ fun main() {
     val metin = readln().trim().lowercase()
 
     when {
-        metin.contains("merhaba") -> {
+        metin == "merhaba" -> {
             println("Size de merhaba!")
         }
-
-        metin.contains("saat kaç") -> {
+        metin == "saat kaç" -> {
             println("Şu an saat 14:00")
         }
-
-        metin.contains("hava") -> {
+        metin.contains("hava") ->{
             println("Dışarıda harika bir hava var.")
         }
         else -> println("Ne demek istediğinizi anlayamadım.")
 
+
+        //metin.contains("merhaba") -> {
+        //    println("Size de merhaba!")
+        //}
+//
+        //metin.contains("saat kaç") -> {
+        //    println("Şu an saat 14:00")
+        //}
+//
+        //metin.contains("hava") -> {
+        //    println("Dışarıda harika bir hava var.")
+        //}
+        //else -> println("Ne demek istediğinizi anlayamadım.")
+//
     }
 
 

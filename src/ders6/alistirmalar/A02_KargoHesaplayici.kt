@@ -10,14 +10,15 @@ fun main() {
     }
 
     when (sepetTutari) {
-
         in 0.00..99.99 -> println("Kargo 30 TL, Toplam Tutar: ${sepetTutari + 30}")
         in 100.0..299.99 -> println("Kargo 15 TL, Toplam Tutar: ${sepetTutari + 15}")
-        else -> println("Kargo Bedava, Toplam Tutar: Toplam Tutar: $sepetTutari")
+        else ->
+            if (sepetTutari < 0){
+            println("Yanlış tutar girişi")
+        }else{
+            println("Kargo Bedava, Toplam Tutar: Toplam Tutar: $sepetTutari")
+        }
 
-        //in 0..99.99.toInt() -> println("Kargo 30 TL")
-        //in 100.0..299.99 -> println("Kargo 15 TL")
-        //else -> println("Kargo Bedava!")
     }
 
 
