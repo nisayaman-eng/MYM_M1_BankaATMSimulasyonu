@@ -80,7 +80,7 @@ fun main() {
                         break@DisDongu
                     }
 
-                    else -> println("Geçersiz seçim! Tekrar deneyin.\n")
+                    else -> println("Geçersiz seçim! Tekrar deneyin🤗.\n")
                 }
 
 
